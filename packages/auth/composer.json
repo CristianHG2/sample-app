@@ -1,0 +1,15 @@
+{
+    "name": "lifespikes/auth",
+    "autoload": {
+        "psr-4": {
+            "Lifespikes\\Auth\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lifespikes\\Auth\\AuthServiceProvider"
+            ]
+        }
+    }
+}

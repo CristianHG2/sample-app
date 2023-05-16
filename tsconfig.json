@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "useDefineForClassFields": true,
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext",
+            "es2015.symbol"
+        ],
+        "allowJs": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "sourceMap": true,
+        "baseUrl": ".",
+        "target": "ES2021",
+        "types": ["vite/client"],
+        "typeRoots": [
+            "node_modules/@types",
+            "resources/js/types"
+        ],
+        "paths": {
+            "@php-beam/*": ["./*"],
+            "@/generated": ["storage/app/types"]
+        },
+        "skipLibCheck": true
+    },
+    "include": [
+        "./packages/**/*.ts",
+        "./packages/**/*.tsx",
+        "./resources/**/*.ts",
+        "./resources/**/*.tsx"
+    ],
+    "exclude": ["node_modules", "**/node_modules"]
+}

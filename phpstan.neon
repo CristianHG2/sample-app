@@ -1,0 +1,25 @@
+includes:
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+
+parameters:
+    level: max
+
+    ignoreErrors:
+        - '#Dynamic call to static method#'
+        - '#Variable method call on#'
+        - '#Access to an undefined property#'
+
+    editorUrl: 'phpstorm://open?file=%%file%%&line=%%line%%'
+
+    paths:
+        - packages/
+        - app/
+
+    databaseMigrationsPath:
+        - database/migrations/
+
+    checkModelProperties: true
+    checkOctaneCompatibility: true
+
+    checkMissingIterableValueType: false
+    reportUnmatchedIgnoredErrors: true

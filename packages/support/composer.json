@@ -1,0 +1,15 @@
+{
+    "name": "lifespikes/support",
+    "autoload": {
+        "psr-4": {
+            "Lifespikes\\Support\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lifespikes\\Support\\SupportServiceProvider"
+            ]
+        }
+    }
+}
